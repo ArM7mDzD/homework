@@ -1,0 +1,26 @@
+-Session:
+ Session is a State Management Technique.
+ A Session can store the value on the Server. 
+ It can support any type of object to be stored along with our own custom objects. 
+ A session is one of the best techniques for State Management because it stores the data as client-based, 
+ in other words the data is stored for every user separately and the data is secured also because it is on the server.
+
+-Application State:
+ASP.Net Application state is a server side state management technique.
+
+Application state is a global storage mechanism that used to stored data on the server and shared for all users, means data stored in Application state is common for all user. Data from Application state can be accessible anywhere in the application. Application state is based on the System.Web.HttpApplicationState class.
+
+The application state used same way as session state, but session state is specific for a single user session, where as application state common for all users of asp.net application.
+
+-Cookies:
+ASP.NET Cookie is a small bit of text that is used to store user-specific information. This information can be read by the web application whenever user visits the site.
+
+When a user requests for a web page, web server sends not just a page, but also a cookie containing the date and time. This cookie stores in a folder on the user's hard disk.
+
+When the user requests for the web page again, browser looks on the hard drive for the cookie associated with the web page. Browser stores separate cookie for each different sites user visited.
+
+-HiddenField:
+ 
+HiddenField, as name implies, is hidden. This is non visual control in ASP.NET where you can save the value. This is one of the types of client-side state management tools. It stores the value between the roundtrip. Anyone can see HiddenField details by simply viewing the source of document.
+ 
+HiddenFields are not encrypted or protected and can be changed by anyone. However, from a security point of view, this is not suggested. ASP.NET uses HiddenField control for managing the ViewState. So, don’t store any important or confidential data like password and credit card details with this control.

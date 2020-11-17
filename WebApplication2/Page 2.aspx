@@ -11,7 +11,18 @@
         <div>
         </div>
         <asp:CheckBox ID="CheckBox1" runat="server" Text="&lt;---" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="check" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="check" /> 
+    <div>  
+        User Name:-<asp:TextBox ID="tbUserName" runat="server"></asp:TextBox>  
+        <br />  
+        <br />  
+        Password:-<asp:TextBox ID="tbpwd" runat="server"></asp:TextBox>  
+        <br />
+        <br />
+        <asp:HiddenField ID="hdnfldCurrentDateTime" runat="server" />
+        <asp:Label ID="lblCurrentDateTime" runat="server" Text="Hidden Field"></asp:Label>  
+        <br />  
+    </div>  
     </form>
 </body>
 </html>
